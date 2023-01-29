@@ -2,7 +2,6 @@ import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import BackgroundCircles from './BackgroundCircles';
 import BackgroundTrace from './BackgroundTrace';
 import MainPortfolioImage from '../public/portfolio_hero.jpg'
 
