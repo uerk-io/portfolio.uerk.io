@@ -10,7 +10,7 @@ type Props = {
 function ExperienceCard({experience}: Props) {
     return(
         <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 pt-20 w-[400px] md:w-[600px] xl:w-[900px]
-            snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opactiy duration-200 overflow-hidden">
+            snap-center bg-[#292929] p-10 cursor-pointer duration-200 overflow-hidden">
             <Image
             src={experience.company_logo_path}
             alt={experience.company}
@@ -19,8 +19,8 @@ function ExperienceCard({experience}: Props) {
             height={200}
             />
             <div className="px-0 md:px-10">
-                <h4 className="text-4xl font-light">{experience.position_title}</h4>
-                <p className="font-bold text-2xl mt-1">{experience.company}</p>
+                <h4 className="text-xl md:text-4xl font-light">{experience.position_title}</h4>
+                <p className="font-bold text-lg md:text-2xl mt-1">{experience.company}</p>
                 <div className="flex space-x-2 my-2">
                     {/* Tech Used */}
                     {/* Tech Used */}

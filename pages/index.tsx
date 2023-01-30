@@ -9,6 +9,7 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import WorkExperience from '@/components/WorkExperience';
 import Skills from '@/components/Skills';
+import ContactMe from '@/components/ContactMe';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +18,7 @@ export default function Home() {
 
 
   return (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory
+    <div className="bg-[rgb(36,36,36)] text-white h-screen
     overflow-scroll z-0">
       <Head>
         <title>Uerk.IO - Kyle Uerkwitz</title>
@@ -25,23 +26,33 @@ export default function Home() {
       <Header />
 
       {/* Hero */}
-      <section id='hero' className="snap-start">
+      <section id='hero' className="">
         <Hero/>
       </section>
 
       {/* About */}
-      <section id='about' className="snap-center">
+      <section id='about' className="">
         <About/>
       </section>
 
       { /* Experience */}
-      <section id='experience' className='snap-center'>
+      <section id='experience' className=''>
         <WorkExperience/>
       </section>
 
       {/* Skills */}
-      <section id='skills' className='snap-center'>
+      {
+        /**
+        <section id='skills' className=''>
         <Skills/>
+        </section>
+       */
+      }
+      
+
+      {/** Contact */}
+      <section id='contact' className=''>
+        <ContactMe/>
       </section>
 
       {/* Projects */}

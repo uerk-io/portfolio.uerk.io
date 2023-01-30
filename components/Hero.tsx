@@ -11,14 +11,14 @@ function Hero({ }: Props) {
     const [text, count] = useTypewriter({
         words: [
             "<Uerk.IO>",
-            "Kyle Uerkwitz, Full-Stack Engineer."
+            "Kyle Uerkwitz"
         ],
         loop: true,
         delaySpeed: 2000
     })
     return (
         <div className="relative h-screen flex flex-col items-center justify-center
-    text-center overflow-hidden">
+    text-center overflow-hidden pb-40">
             {/* <BackgroundCircles /> */ }
 
             <div className="z-10 absolute">
@@ -39,7 +39,7 @@ function Hero({ }: Props) {
 
             <div className="z-20 relative" style={{backgroundColor: 'rgba(28,28,28, 0.95)', borderRadius:10}}>
 
-                <h2 className="text-md uppercase text-gray-500 pt-2 pb-2 tracking-[5px]">Software Engineer</h2>
+                <h2 className="text-md uppercase text-gray-500 pt-2 pb-2 tracking-[5px]">Full-Stack Engineer</h2>
 
                 <h1 className="text-4xl lg:text-5xl font-semibold px-10">
                     <span className="mr-3">{text}</span>
