@@ -55,7 +55,7 @@ function Header({ }: Props) {
                 {/* Contact Me */}
                 <SocialIcon
                     className="cursor-pointer"
-                    url="mailto:kyleuerkwitz@gmail.com"
+                    url="#contact"
                     fgColor="#0FA17A"
                     bgColor="transparent" />
 

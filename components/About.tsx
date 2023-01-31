@@ -15,7 +15,7 @@ function About({ }: Props) {
         className="flex flex-col relative h-screen text-center md:text-left
     max-w-7xl px-10 justify-evenly mx-auto items-center">
         <h3 className="flex justify-center text-center top-24 uppercase tracking-[20px] text-gray-500 text-xl md:text-4xl">About</h3>
-        {/* TODO: Use NextJS Images */}
+
         <Image
           src={SecondPortfolioImage}
           className="-mb-40 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[500px]"

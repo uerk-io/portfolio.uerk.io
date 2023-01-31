@@ -19,25 +19,25 @@ function Hero({ }: Props) {
     return (
         <div className="relative h-screen flex flex-col items-center justify-center
     text-center overflow-hidden pb-40">
-            {/* <BackgroundCircles /> */ }
+            {/* <BackgroundCircles /> */}
 
             <div className="z-10 absolute">
-            <BackgroundTrace/>
-            
+                <BackgroundTrace />
+
             </div>
             <div className="z-20 absolute">
-            <Image
+                <Image
                     className="relative w-56 rounded-full mx-auto object-cover"
                     alt=""
                     src={MainPortfolioImage}>
                 </Image>
             </div>
 
-            <div style={{height:480}}>
+            <div style={{ height: 480 }}>
 
             </div>
 
-            <div className="z-20 relative" style={{backgroundColor: 'rgba(28,28,28, 0.95)', borderRadius:10}}>
+            <div className="z-20 relative" style={{ backgroundColor: 'rgba(28,28,28, 0.95)', borderRadius: 10 }}>
 
                 <h2 className="text-md uppercase text-gray-500 pt-2 pb-2 tracking-[5px]">Full-Stack Engineer</h2>
 
@@ -53,12 +53,14 @@ function Hero({ }: Props) {
                     <Link href="#experience">
                         <button className="heroButton text-white mr-1">Experience</button>
                     </Link>
-                    <Link href="#skills">
-                        <button className="heroButton text-white mr-1"> Skills</button>
+                    <Link href="#contact">
+                        <button className="heroButton text-white mr-1"> Contact Me</button>
                     </Link>
+                    {/**
                     <Link href="#projects">
                         <button className="heroButton text-white">Projects</button>
                     </Link>
+                    */ }
                 </div>
             </div>
         </div>
