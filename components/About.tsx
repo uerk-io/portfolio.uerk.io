@@ -21,7 +21,7 @@ function About({ }: Props) {
           className="-mb-40 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[500px]"
           alt="Portfolio Headshot" />
 
-        <p className="text-base lg:text-lg pt-40 lg: pt-20">
+        <p className="text-base lg:text-lg pt-40 lg:pt-20">
           I am a results-oriented professional with nearly 4 years of experience and a proven knowledge of Java, Python, C#, and JavaScript/TypeScript.
           I&#39;m aiming to leverage my abilities to successfully fill a full-stack Software Engineering position. Some of my hobbies include 3D printing, microelectronics
           projects (including the Arduino series of microcontrollers, and the Raspberry Pi), and my passion for guitar and music/audio production.
