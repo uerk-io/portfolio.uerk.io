@@ -52,9 +52,9 @@ ENV NEXT_TELEMETRY_DISABLED 1
 # The "node" user is provided in the Node.js Alpine base image
 USER node
 
-EXPOSE 3000
+EXPOSE 3001
 
-ENV PORT 3000
+ENV PORT 3001
 
 # Launch app with PM2
 CMD [ "pm2-runtime", "ecosystem.config.js" ]
