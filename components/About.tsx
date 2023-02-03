@@ -14,7 +14,7 @@ function About({ }: Props) {
         transition={{ duration: 1.0 }}
         className="flex flex-col relative h-screen text-center md:text-left
     max-w-7xl px-10 justify-evenly mx-auto items-center">
-        <h1 className="flex justify-center text-center top-24 uppercase tracking-[20px] text-gray-500 text-xl md:text-4xl">About</h3>
+        <h1 className="flex justify-center text-center top-24 uppercase tracking-[20px] text-gray-500 text-xl md:text-4xl">About</h1>
 
         <Image
           src={SecondPortfolioImage}
