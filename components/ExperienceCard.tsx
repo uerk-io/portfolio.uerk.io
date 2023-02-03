@@ -19,7 +19,7 @@ function ExperienceCard({experience}: Props) {
             height={200}
             />
             <div className="px-0 md:px-10">
-                <h4 className="text-xl md:text-4xl font-light">{experience.position_title}</h4>
+                <h1 className="text-xl md:text-4xl font-light">{experience.position_title}</h1>
                 <p className="font-bold text-lg md:text-2xl mt-1">{experience.company}</p>
                 <div className="flex space-x-2 my-2">
                     {/* Tech Used */}

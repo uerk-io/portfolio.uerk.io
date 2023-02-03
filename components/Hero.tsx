@@ -41,7 +41,7 @@ function Hero({ }: Props) {
 
             <div className="z-20 relative" style={{ backgroundColor: 'rgba(28,28,28, 0.95)', borderRadius: 10 }}>
 
-                <h2 className="text-md uppercase text-gray-500 pt-2 pb-2 tracking-[5px]">Full-Stack Engineer</h2>
+                <h2 className="text-md uppercase text-white pt-2 pb-2 tracking-[5px]">Full-Stack Engineer</h2>
 
                 <h1 className="text-4xl lg:text-5xl font-semibold px-10">
                     <span className="mr-3">{text}</span>
@@ -50,13 +50,13 @@ function Hero({ }: Props) {
 
                 <div className="pt-5">
                     <Link href="#about">
-                        <button className="heroButton text-white mr-1">About</button>
+                        <button className="heroButton mr-1">About</button>
                     </Link>
                     <Link href="#experience">
-                        <button className="heroButton text-white mr-1">Experience</button>
+                        <button className="heroButton mr-1">Experience</button>
                     </Link>
                     <Link href="#contact">
-                        <button className="heroButton text-white mr-1"> Contact Me</button>
+                        <button className="heroButton mr-1"> Contact Me</button>
                     </Link>
                     {/**
                     <Link href="#projects">

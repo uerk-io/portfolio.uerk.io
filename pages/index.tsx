@@ -18,26 +18,32 @@ export default function Home() {
 
 
   return (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen
+    <div className="bg-zinc-900 text-white h-screen
     overflow-scroll z-0">
       <Head>
         <title>Uerk.IO - Kyle Uerkwitz</title>
+        <meta name="description" content="I am a results-oriented professional with nearly 4 years of experience and a proven knowledge of Java, Python, C#, and JavaScript/TypeScript. Check out my portfolio!" />
+        <meta property="og:title" content="Kyle Uerkwitz @ UerkIO" />
+        <meta property="og:description" content="I am a results-oriented professional with nearly 4 years of experience and a proven knowledge of Java, Python, C#, and JavaScript/TypeScript. Check out my portfolio!" />
+        <meta property="og:url" content="https://uerk.io/" />
+        <meta property="og:type" content="website" />
+
       </Head>
       <Header />
 
       {/* Hero */}
       <section id='hero' className="">
-        <Hero/>
+        <Hero />
       </section>
 
       {/* About */}
       <section id='about' className="">
-        <About/>
+        <About />
       </section>
 
       { /* Experience */}
       <section id='experience' className=''>
-        <WorkExperience/>
+        <WorkExperience />
       </section>
 
       {/* Skills */}
@@ -48,11 +54,11 @@ export default function Home() {
         </section>
        */
       }
-      
+
 
       {/** Contact */}
       <section id='contact' className=''>
-        <ContactMe/>
+        <ContactMe />
       </section>
 
       {/* Projects */}

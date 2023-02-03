@@ -1,13 +1,15 @@
 
 export class PriorExperience {
+    key: string;
     position_title: string;
     company: string;
     company_logo_path: string;
     time_period: string;
     highlights: string[];
 
-    constructor(position_title:string, company:string, company_logo_path: string, time_period: string, highlights: string[])
+    constructor(key: string, position_title:string, company:string, company_logo_path: string, time_period: string, highlights: string[])
     {
+        this.key = key
         this.position_title = position_title;
         this.company = company;
         this.company_logo_path = company_logo_path;
@@ -18,6 +20,7 @@ export class PriorExperience {
 
 export const previous_positions: PriorExperience[] =  [
     {
+        key: "ams",
         position_title: "Back-End Software Engineer",
         company: "AMS Staffing, Inc.",
         time_period: "July 2022 - December 2022",
@@ -30,6 +33,7 @@ export const previous_positions: PriorExperience[] =  [
         company_logo_path: "/ams.jpg"
     },
     {
+        key: "powerschool",
         position_title: "Full-Stack Software Engineer",
         company: "Powerschool",
         time_period: "January 2022 - June 2022",
@@ -42,6 +46,7 @@ export const previous_positions: PriorExperience[] =  [
         company_logo_path: "/powerschool.jpg" 
     },
     {
+        key: "pti",
         position_title: "Information Systems Developer",
         company: "Plastic Technologies, Inc.",
         time_period: "March 2019 - January 2021",
@@ -54,6 +59,7 @@ export const previous_positions: PriorExperience[] =  [
         company_logo_path: "/pti.jpg" 
     },
     {
+        key: "ut",
         position_title: "Peer Mentor",
         company: "The University of Toledo",
         time_period: "January 2019 - May 2019, August 2019 - December 2019",
