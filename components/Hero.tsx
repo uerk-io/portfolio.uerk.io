@@ -31,7 +31,7 @@ function Hero({ }: Props) {
                     alt=""
                     loading="eager"
                     src={MainPortfolioImage}
-                    sizes = "max-width 224px"
+                    sizes = "max-width: 224px"
                     >
                 </Image>
             </div>
