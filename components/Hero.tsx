@@ -29,7 +29,9 @@ function Hero({ }: Props) {
                 <Image
                     className="relative w-56 rounded-full mx-auto object-cover"
                     alt=""
-                    src={MainPortfolioImage}>
+                    src={MainPortfolioImage}
+                    sizes = "max-width: 100vw"
+                    >
                 </Image>
             </div>
 
