@@ -22,11 +22,23 @@ export default function Home() {
     overflow-scroll z-0">
       <Head>
         <title>Uerk.IO - Kyle Uerkwitz</title>
+        {/** Standard Data and SEO */}
         <meta name="description" content="I am a results-oriented professional with nearly 4 years of experience and a proven knowledge of Java, Python, C#, and JavaScript/TypeScript. Check out my portfolio!" />
         <meta property="og:title" content="Kyle Uerkwitz @ UerkIO" />
         <meta property="og:description" content="I am a results-oriented professional with nearly 4 years of experience and a proven knowledge of Java, Python, C#, and JavaScript/TypeScript. Check out my portfolio!" />
         <meta property="og:url" content="https://uerk.io/" />
         <meta property="og:type" content="website" />
+
+        {/** Favicon Setup */}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        {/** <link rel="manifest" crossorigin="use-credentials" href="/public/manifest.json" /> */ }
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="msapplication-config" content="/public/favicon/browserconfig.xml" />
+        <meta name="theme-color" content="#ffffff" />
 
       </Head>
       <Header />
