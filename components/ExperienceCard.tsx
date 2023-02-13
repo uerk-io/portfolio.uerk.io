@@ -29,8 +29,8 @@ function ExperienceCard({experience}: Props) {
                 <p className="uppercase py-5 text-gray-300">{experience.time_period}</p>
 
                 <ul className="list-disc space-y-4 ml-5 text-md">
-                    {experience.highlights.map((highlight) => (
-                        <li key={highlight.indexOf(highlight)}>{highlight}</li>
+                    {experience.highlights.map((highlight, index) => (
+                        <li key={index}>{highlight}</li>
                     ))}
                 </ul>
 
