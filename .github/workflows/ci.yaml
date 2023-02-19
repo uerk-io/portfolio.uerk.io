@@ -22,7 +22,7 @@ jobs:
     - name: Build site with Next
       run: pnpm build
     - name: ssh deploy
-      uses: eastingthemes/ssh-deploy@v4.1.0
+      uses: easingthemes/ssh-deploy@v4.1.0
       env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rltgoDzvO --delete"
