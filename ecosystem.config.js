@@ -3,7 +3,7 @@ module.exports = {
       name   : "uerk.io",
       script : "npm",
       args: "start",
-      port : "3001",
+      port : "8080",
       env_production: {
          NODE_ENV: "production"
       },
