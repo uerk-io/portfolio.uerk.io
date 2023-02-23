@@ -30,7 +30,7 @@ export const previous_positions: PriorExperience[] =  [
             "Rapidly prototyped and delivered reporting applications for a wide range of SQL/NoSQL data sources",
             "Leveraged Atlassian tools for seamless CI/CD experiences"
         ],
-        company_logo_path: "/ams.jpg"
+        company_logo_path: "/../public/ams.jpg"
     },
     {
         key: "powerschool",
@@ -43,7 +43,7 @@ export const previous_positions: PriorExperience[] =  [
             "Hands-on live deployments of massively scaled software (with a certification for deploying to AWS)",
             "Directed quality by fixing user permissions bugs, netting an overall higher validation of data"
         ],
-        company_logo_path: "/powerschool.jpg" 
+        company_logo_path: "/../public/powerschool.jpg" 
     },
     {
         key: "pti",
@@ -56,7 +56,7 @@ export const previous_positions: PriorExperience[] =  [
             "Collaborated with team members to revisit and improve software implementations",
             "Provided full-stack software solutions with a focus in web microservices"
         ],
-        company_logo_path: "/pti.jpg" 
+        company_logo_path: "/../public/pti.jpg" 
     }
     /** {
         key: "ut",
