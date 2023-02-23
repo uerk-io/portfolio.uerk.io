@@ -8,7 +8,7 @@ type Props = {}
 function MapPriorExperiences() {
   return (
     previous_positions.map((position) =>
-      <div key={position.key}>
+      <div className="flex flex-col flex-initial px-10 py-10" key={position.key}>
         <ExperienceCard experience={position}></ExperienceCard>
       </div>
     )
@@ -19,11 +19,11 @@ function MapPriorExperiences() {
 function WorkExperience({ }: Props) {
 
   return (
-    <motion.div className="h-screen flex relative overflow-hidden flex-col text-lft max-w-full px-10 justify-evenly mx-auto">
+    <motion.div className="flex relative overflow-hidden flex-col text-lft max-w-full pt-10 px-10 space-y-10 justify-evenly mx-auto">
       
-      <h1 className="flex  justify-center top-24 uppercase tracking-[20px] text-xl md:text-4xl">Experience</h1>
+      <h1 className="flex  justify-center top-24 uppercase tracking-[20px] mr-[-20px] text-lg md:text-4xl">Experience</h1>
 
-      <div className="w-full flex space-x-5 overflow-x-scroll p-10 md:p-[200px] snap-x snap-mandatory">
+      <div className="flex flex-row flex-wrap justify-center">
 
         {MapPriorExperiences()}
       

@@ -15,14 +15,16 @@ const triangle_style: MotionStyle = {
 
 {/* Attributes to Describe Drawing the Path of the Circle Highlight Elements */ }
 const drawCircle = {
-  hidden: { pathLength: 0, opacity: 0 },
+  hidden: { pathLength: 0, opacity: 0, rotate:-270},
   visible: (i: any) => {
     const delay = i * 0.5;
     return {
       pathLength: 1,
       opacity: 1,
+      rotate: -90,
       transition: {
-        pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
+        pathLength: { delay, type: "spring", duration: 2, bounce: 0 },
+        rotate: {delay, type: "spring", duration: 2, bounce: 0},
         opacity: { delay, duration: 0.01 }
       }
     };
@@ -65,7 +67,7 @@ function DrawHighlightCircles() {
         r="150"
         stroke="#5F0020"
         variants={drawCircle}
-        custom={3}
+        custom={2.5}
         style={circle_style}
       />
 
@@ -76,7 +78,7 @@ function DrawHighlightCircles() {
         r="150"
         stroke="#03642A"
         variants={drawCircle}
-        custom={4}
+        custom={3}
         style={circle_style}
       />
 
@@ -87,7 +89,7 @@ function DrawHighlightCircles() {
         r="150"
         stroke="#033A64"
         variants={drawCircle}
-        custom={5}
+        custom={3.5}
         style={circle_style}
       />
 
@@ -98,7 +100,7 @@ function DrawHighlightCircles() {
         r="150"
         stroke="#5F0020"
         variants={drawCircle}
-        custom={6}
+        custom={4}
         style={circle_style}
       />
 
@@ -109,7 +111,7 @@ function DrawHighlightCircles() {
         r="150"
         stroke="#03642A"
         variants={drawCircle}
-        custom={7}
+        custom={4.5}
         style={circle_style}
       />
 
@@ -120,7 +122,7 @@ function DrawHighlightCircles() {
         r="150"
         stroke="#0FA17A"
         variants={drawCircle}
-        custom={1}
+        custom={1.5}
         style={circle_style}
       />
     </>
@@ -169,21 +171,21 @@ function DrawHighlightTriangles() {
 
       {/* Top Line */}
       <motion.line
-        x1="200"
+        x1="800"
         y1="340"
-        x2="800"
+        x2="200"
         y2="340"
         variants={drawTriangle}
         custom={2}
         style={triangle_style}
       />
 
-      {/* Top Right Down */}
+      {/* Top Right Up */}
       <motion.line
-        x1="800"
-        y1="340"
-        x2="500"
-        y2="820"
+        x1="500"
+        y1="820"
+        x2="800"
+        y2="340"
         variants={drawTriangle}
         custom={2}
         style={triangle_style}

@@ -57,8 +57,8 @@ export const previous_positions: PriorExperience[] =  [
             "Provided full-stack software solutions with a focus in web microservices"
         ],
         company_logo_path: "/pti.jpg" 
-    },
-    {
+    }
+    /** {
         key: "ut",
         position_title: "Peer Mentor",
         company: "The University of Toledo",
@@ -70,6 +70,6 @@ export const previous_positions: PriorExperience[] =  [
             "Demonstrated the features of modern IDEs for academic projects"
         ],
         company_logo_path: "/utoledo.jpg" 
-    }
+    } ***/
     
 ]
