@@ -12,7 +12,7 @@ function ExperienceCard({experience}: Props) {
         <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 pt-20 h-[850px] md:h-[800px] w-[300px] md:w-[600px]
             snap-center bg-[#292929] p-10 cursor-pointer duration-200 overflow-hidden">
             <Image
-            src={experience.company_logo_path}
+            src={experience.company_logo}
             alt={experience.company}
             className=" rounded-md w-[100px] h-[100px] xl:w-[200px] xl:h-[200px]  md:hobject-cover object-center"
             width={200}
