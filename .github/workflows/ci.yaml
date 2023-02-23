@@ -1,13 +1,22 @@
 name: Next Build and Deploy CI
 
 on:
-  push:
-    branches: [ "main" ]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version Description for Logging
+        default: Default Bump Version
+        required: true
 
 jobs:
   build:
     runs-on: ubuntu-22.04
     steps: 
+    - name: Logging message Bump
+      run: |
+        echo "Running with Message: $BUMP_MESSAGE"
+      env: 
+        BUMP_MESSAGE: ${{ inputs.version }}
     - name: Checkout the repo
       uses: actions/checkout@v3
     - name: Setup pnpm
