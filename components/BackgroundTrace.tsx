@@ -120,7 +120,7 @@ function DrawHighlightCircles() {
         cx="500"
         cy="500"
         r="150"
-        stroke="#0FA17A"
+        stroke="white"
         variants={drawCircle}
         custom={1.5}
         style={circle_style}
