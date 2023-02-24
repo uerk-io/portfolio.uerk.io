@@ -2,6 +2,10 @@
 
 Kyle Uerkwitz's personal portfolio. Made with NextJS 13, styled with Tailwind CSS, and some extra flair with Framer Motion
 
+## Deployment Info and Details
+Test push for Deployment
+v0.1.3
+
 ## Commands / Running
 
 First, run the development server:
