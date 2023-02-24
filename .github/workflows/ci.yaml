@@ -49,7 +49,7 @@ jobs:
         host: ${{ secrets.REMOTE_HOST }}
         username: ${{ secrets.REMOTE_USER }}
         port: ${{ secrets.REMOTE_PORT }}
-        privateKey: $ {{ secrets.SSH_PRIVATE_KEY }} 
+        privateKey: ${{ secrets.SSH_PRIVATE_KEY }} 
     - name: Purge Cloudflare cache
       run: |
         curl --fail-with-body -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
