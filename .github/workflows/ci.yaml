@@ -32,7 +32,7 @@ jobs:
       run: pnpm install --frozen-lockfile
     - name: Build site with Next
       run: pnpm build
-    - name: ssh deploy
+    - name: SSH Deploy & Restart PM2
       uses: easingthemes/ssh-deploy@v4.1.0
       env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -42,14 +42,7 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
           TARGET: ${{ secrets.REMOTE_TARGET }}
-    - name: Run PM2 
-      uses: garygrossgarten/github-action-ssh@0.7.0
-      with:
-        command: ${{ secrets.PM2_RESTART }}
-        host: ${{ secrets.REMOTE_HOST }}
-        username: ${{ secrets.REMOTE_USER }}
-        port: ${{ secrets.REMOTE_PORT }}
-        privateKey: ${{ secrets.SSH_PRIVATE_KEY }} 
+          SCRIPT_AFTER: ${{secrets.PM2 Restart }}
     - name: Purge Cloudflare cache
       run: |
         curl --fail-with-body -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
