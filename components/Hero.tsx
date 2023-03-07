@@ -28,8 +28,8 @@ function Hero({ }: Props) {
             <div className="z-20 absolute">
                 <Image
                     className="relative w-56 rounded-full mx-auto object-cover"
-                    alt=""
-                    loading="eager"
+                    alt="Portfolio Headshot"
+                    priority = {true}
                     src={MainPortfolioImage}
                     sizes = "224px"
                     >

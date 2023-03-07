@@ -18,8 +18,10 @@ function About({ }: Props) {
 
         <Image
           src={SecondPortfolioImage}
-          className="-mb-40 md:mb-0 flex-shrink-0 w-56 h-56 rounded-md object-cover md:rounded-lg md:w-95 md:h-95 xl:w-[500px] xl:h-[500px]"
-          alt="Portfolio Headshot" />
+          className="-mb-40 md:mb-0 flex-shrink-0 w-56 h-56 rounded-md object-cover md:rounded-lg md:w-96 md:h-96 xl:w-[500px] xl:h-[500px]"
+          sizes="(max-width: 768px) 224px, (max-width: 1200px) 500px, 384px"
+          priority={true}
+          alt="Secondary Headshot" />
 
         <p className="text-base lg:text-lg lg:pt-20">
           I am a results-oriented professional with nearly 4 years of experience and a proven knowledge of Java, Python, C#, and JavaScript/TypeScript.
