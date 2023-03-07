@@ -14,9 +14,8 @@ function ExperienceCard({experience}: Props) {
             <Image
             src={experience.company_logo}
             alt={experience.company}
-            className=" rounded-md w-[100px] h-[100px] xl:w-[200px] xl:h-[200px]  md:hobject-cover object-center"
-            width={200}
-            height={200}
+            className=" rounded-md w-[100px] h-[100px] xl:w-[200px] xl:h-[200px]  md:object-cover object-center"
+            sizes= "(max-width: 1200px) 200px"
             />
             <div className="px-0 md:px-10">
                 <h1 className="xl:text-4xl text-xl  font-light">{experience.position_title}</h1>
